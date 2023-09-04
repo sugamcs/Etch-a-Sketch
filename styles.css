@@ -1,0 +1,19 @@
+.grid-container {
+    display: grid;
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    grid-template-columns: repeat(16, 1fr); /* 16 columns */
+    grid-template-rows: repeat(16, 1fr); /* 16 rows */
+    border: 2px black;
+}
+
+.grid-square {
+    background-color: white; /* Default color */
+    border: 1px solid black;
+}
+
+/* Style when permanently hovered */
+.grid-square.hovered {
+    background-color: black;
+}
