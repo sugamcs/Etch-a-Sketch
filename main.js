@@ -1,6 +1,5 @@
 const gridContainer = document.querySelector('.grid-container');
 
-// Function to create a grid item
 function createGridItem() {
     const gridItem = document.createElement('div');
     gridItem.classList.add('grid-item');
@@ -11,11 +10,28 @@ function createGridItem() {
 
     return gridItem;
 }
-for (let row = 0; row < 16; row++) {
-    for (let column = 0; column < 16; column++) {
+
+const btn = document.createElement('button');
+btn.id = 'btn';
+btn.textContent = 'Reset';
+document.body.append(btn);
+
+btn.addEventListener('click', () => { 
+    const size = prompt("How many squares per side? (Maximum: 100)");
+    createGrid(size);
+});
+
+function createGrid(size) {
+    gridContainer.innerHTML = ''; 
+    gridContainer.style.gridTemplateColumns = `repeat(${size}, 1fr)`; 
+    gridContainer.style.gridTemplateRows = `repeat(${size}, 1fr)`; 
+    
+    const totalSquares = size * size; 
+    
+    for (let i = 0; i < totalSquares; i++) {
         const square = createGridItem();
         gridContainer.appendChild(square);
     }
 }
 
-
+createGrid(16);

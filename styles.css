@@ -2,18 +2,17 @@
     display: grid;
     height: 400px;
     width: 400px;
-    background-color: aqua;
-    grid-template-columns: repeat(16, 1fr); /* 16 columns */
-    grid-template-rows: repeat(16, 1fr); /* 16 rows */
+    background-color: rgb(219, 86, 86);
+    grid-template-columns: repeat(16, 1fr); 
+    grid-template-rows: repeat(16, 1fr);
     border: 2px black;
 }
 
 .grid-square {
-    background-color: white; /* Default color */
+    background-color: white;
     border: 1px solid black;
 }
 
-/* Style when permanently hovered */
 .grid-square.hovered {
     background-color: black;
 }
