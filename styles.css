@@ -3,8 +3,7 @@
     height: 400px;
     width: 400px;
     background-color: rgb(219, 86, 86);
-    grid-template-columns: repeat(16, 1fr); 
-    grid-template-rows: repeat(16, 1fr);
+    
     border: 2px black;
 }
 
