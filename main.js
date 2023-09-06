@@ -38,4 +38,3 @@ function createGrid(size) {
 }
 
 createGrid(16);
-// changed repository name to Etch-a-Sketch
