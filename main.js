@@ -1,4 +1,6 @@
 const gridContainer = document.querySelector('.grid-container');
+gridContainer.style.textContent = "center"
+
 
 function createGridItem() {
     const gridItem = document.createElement('div');
@@ -10,8 +12,8 @@ function createGridItem() {
 
     return gridItem;
 }
-
 const btn = document.createElement('button');
+
 btn.id = 'btn';
 btn.textContent = 'Reset';
 document.body.append(btn);
@@ -30,6 +32,7 @@ function createGrid(size) {
     
     for (let i = 0; i < totalSquares; i++) {
         const square = createGridItem();
+        square.id = 'square'
         gridContainer.appendChild(square);
     }
 }
