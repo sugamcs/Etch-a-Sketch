@@ -33,5 +33,5 @@ function createGrid(size) {
         gridContainer.appendChild(square);
     }
 }
-
 createGrid(16);
+// finished
