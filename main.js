@@ -1,7 +1,4 @@
 const gridContainer = document.querySelector('.grid-container');
-gridContainer.style.textContent = "center"
-
-
 function createGridItem() {
     const gridItem = document.createElement('div');
     gridItem.classList.add('grid-item');
