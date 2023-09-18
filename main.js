@@ -18,7 +18,7 @@ document.body.append(btn);
 btn.addEventListener('click', () => { 
     const size = prompt("How many squares per side? (Maximum: 100)");
 
-    if (Number(size) >= 100) {
+    if (Number(size) > 100) {
         createGrid(16); // Reset to 16 squares
         alert("Please enter 100 or less squares!");
     } else {
