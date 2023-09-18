@@ -41,4 +41,4 @@ function createGrid(size) {
     }
 }
 createGrid(16);
-// finished
+// finished.
